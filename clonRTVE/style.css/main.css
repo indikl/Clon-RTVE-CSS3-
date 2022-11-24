@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #951B32;
+    font-family: sans-serif;
+}
+
+
+
+/* Sección encabezado con logo y navegación */
+
+header {
+    height: 54px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    margin: auto;
+} 
+
+.header_nav {
+    background: #000;
+    display: flex;
+}
+
+.logo {
+    height: 50px;
+}
+
+.item_nav {
+    padding: 0 10px;
+}
+
+.item_nav:hover {
+    background: #f24f13;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.item_nav:hover:first-child {
+    display: none;
+}
+
+.item_nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Fin del encabezado */
+
+/* Sección principal */
+.decoration {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    z-index: -10;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: #fff;
+    text-transform: uppercase;
+    margin: 21px 15% 60px;
+}
+
+.cabecera_directo {
+    display: flex;
+    height: 150px;
+}
+
+
+/* Animación para la emisión en directo */
+
+.directo_pulso {
+    margin: 5px 15% 100px;
+    padding: 8px;
+    display: flex;
+    align-items: initial;
+    width: 150px;
+    width: 150px;
+    border-radius: 5px;
+    background: #ff0000; 
+    
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.punto_pulso {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+    margin: auto;
+    animation: animate .8s linear infinite;
+}
+
+.directo_pulso h2 {
+    color: #fff;
+    margin-left: 10px;
+    font-weight: lighter;
+    text-align: start;
+}
+
+/* Fin de la animación para el directo */
+
+/* Sección banderas y marcador */
+.directo_banderas {
+    width: 400px;
+    height: 150px;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.equipo_1 figure img {
+    width: 100px;
+    height: 90px;
+}
+
+.equipo_2 figure img {
+    width: 100px;
+    height: 75px;
+    margin-top: 8px;
+    margin-bottom: 3px;
+}
+
+figure figcaption {
+    color: #fff;
+    text-align: center;
+    margin-top: 0;
+    display: flex;
+    flex-flow: column;
+}
+
+.marcador {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    align-items: flex-start;
+}
+
+.marcador p {
+    color: #fff;
+    margin:  20px auto;
+    width: 100px;
+    font-size: 3em;
+}
+
+
+
+/* Fin sección banderas y marcador */
+
+.img_grande {
+    margin-left: 15%;
+    width: 1200px;
+    border-bottom: 6px solid #f24f13;
+}
+
+/* Fin sección principal */
